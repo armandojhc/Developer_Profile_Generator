@@ -140,8 +140,6 @@ inquirer.prompt([
 
   }
 
-//   // TESTING DATA
-// let userResponse = {githubName: "armandojhc", favoriteColor: "pink"};
+// TESTING DATA
+// let userResponse = {githubName: "armandojhc", favoriteColor: "red"};
 // getGithubUserInfo(userResponse);
-
-// END TESTING

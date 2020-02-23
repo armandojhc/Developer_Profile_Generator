@@ -58,13 +58,15 @@ const colors = {
              height: 100%;
              } */
              /* .wrapper { */
-             /* background-color: ${colors[userInfo.favoriteColor].wrapperBackground}; */
+             
              /* padding-top: 10px;  */
              /* padding: 20px;
              } */
              #titleContainer {
+              background-color: ${colors[userInfo.favoriteColor].wrapperBackground}; 
              position: relative;
             top: 30px;
+
             background-color:  rgb(240, 128, 128);
             border-radius: 10px;
             height: 500px;
@@ -123,15 +125,15 @@ const colors = {
              display: flex;
              justify-content: center;
              flex-wrap: wrap;
-             border: solid  rgb(219, 219, 8);
+             /*border: solid  rgb(219, 219, 8);*/
+             border: 6px solid ${colors[userInfo.favoriteColor].photoBorderColor}; 
              border-width: 5px;
              width: 250px;
              height: 250px;
              border-radius: 200px;
              margin-top: 0px;
     
-             /* background-color: ${colors[userInfo.favoriteColor].headerBackground}; */
-             /* color: ${colors[userInfo.favoriteColor].headerColor}; */
+              
              /* padding: 10px;
              width: 95%;
              border-radius: 6px; */
@@ -142,7 +144,7 @@ const colors = {
              /* border-radius: 50%;
              object-fit: cover;
              margin-top: -75px; */
-             /* border: 6px solid ${colors[userInfo.favoriteColor].photoBorderColor}; */
+             
              /* box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px; */
              /* } */
              .photo-header h1, .photo-header h2 {
@@ -187,8 +189,8 @@ const colors = {
              .card {
                padding: 20px;
                border-radius: 6px;
-               /* background-color: ${colors[userInfo.favoriteColor].headerBackground}; */
-               /* color: ${colors[userInfo.favoriteColor].headerColor}; */
+               background-color: ${colors[userInfo.favoriteColor].headerBackground}; 
+               color: ${colors[userInfo.favoriteColor].headerColor}; 
                margin: 20px;
              }
              
@@ -229,7 +231,7 @@ const colors = {
                 <h1>Hi!</h1>
                 <h2>My Name is ${userInfo.name}</h2>
                 <h3>Currently @</h3>
-                <h6><a href="${userInfo.locationLink}">${userInfo.location}</a>  github blog</h6>
+                <h6><a href="${userInfo.locationLink}">${userInfo.location} ${userInfo.githubName} href="${userInfo.blog}"</a> blog</h6>
               </div>
             </div>
             <div class="container" id="contentContainer">
